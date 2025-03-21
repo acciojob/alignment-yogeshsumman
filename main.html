@@ -4,31 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Assignment 3</title>
-    <link rel="stylesheet" href="styles.css">
     <style>
         /* Center the heading */
         h1 {
             text-align: center;
         }
-        
+
         /* Table Styling */
-        table {
-            border-collapse: collapse;
+        table.middle {
             border: 1px solid black;
+            border-spacing: 1px;
+            margin: 20px auto;
             width: 100%;
         }
-        
-        td {
+
+        table.middle td {
             border: 1px solid black;
-            padding: 5px;
+            padding: 1px;
             text-align: center;
         }
 
         /* Class-based styling */
-        .middle {
-            margin: auto;
-        }
-
         .center {
             text-align: center;
         }
@@ -46,6 +42,12 @@
             background-color: blue;
             color: white;
         }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -54,19 +56,19 @@
     <!-- Table 1: 3x3 with specific classes and IDs -->
     <table class="middle" id="table-1">
         <tr>
-            <td id="t11">Row 1, Col 1</td>
-            <td id="t12">Row 1, Col 2</td>
-            <td id="t13" class="right">Row 1, Col 3</td>
+            <td id="t11">left</td>
+            <td id="t12">center</td>
+            <td id="t13" class="right">right</td>
         </tr>
         <tr class="center">
-            <td class="center">Row 2, Col 1</td>
-            <td class="center">Row 2, Col 2</td>
-            <td class="right center">Row 2, Col 3</td>
+            <td>left</td>
+            <td>center</td>
+            <td class="right">right</td>
         </tr>
         <tr>
-            <td>Row 3, Col 1</td>
-            <td>Row 3, Col 2</td>
-            <td class="right">Row 3, Col 3</td>
+            <td>left</td>
+            <td>center</td>
+            <td class="right">right</td>
         </tr>
     </table>
 
@@ -75,22 +77,22 @@
     <!-- Table 2: 6x6 with first row spanning all columns -->
     <table class="middle" id="table-2">
         <tr>
-            <td id="t21" colspan="6">This is the header spanning 6 columns</td>
+            <td id="t21" colspan="6"> </td>
         </tr>
         <tr>
-            <td>R2C1</td><td>R2C2</td><td>R2C3</td><td>R2C4</td><td>R2C5</td><td>R2C6</td>
+            <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
         </tr>
         <tr>
-            <td>R3C1</td><td>R3C2</td><td>R3C3</td><td>R3C4</td><td>R3C5</td><td>R3C6</td>
+            <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
         </tr>
         <tr>
-            <td>R4C1</td><td>R4C2</td><td>R4C3</td><td>R4C4</td><td>R4C5</td><td>R4C6</td>
+            <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
         </tr>
         <tr>
-            <td>R5C1</td><td>R5C2</td><td>R5C3</td><td>R5C4</td><td>R5C5</td><td>R5C6</td>
+            <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
         </tr>
         <tr>
-            <td>R6C1</td><td>R6C2</td><td>R6C3</td><td>R6C4</td><td>R6C5</td><td>R6C6</td>
+            <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
         </tr>
     </table>
 
@@ -99,20 +101,18 @@
     <!-- Table 3: With an image and colored rows -->
     <table class="middle" id="table-3">
         <tr class="green">
-            <td>Top Row, Col 1</td>
-            <td>Top Row, Col 2</td>
+            <td> </td>
+            <td> </td>
         </tr>
         <tr>
             <td id="t-image" colspan="2">
-                <img src="https://via.placeholder.com/300" alt="Sample Image" width="300">
+                <img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2013_FallP3/Luthra%20Portfolio/images-1.jpeg" alt="Basketball Player Dunking">
             </td>
         </tr>
         <tr class="blue">
-            <td>Bottom Row, Col 1</td>
-            <td>Bottom Row, Col 2</td>
+            <td> </td>
+            <td> </td>
         </tr>
     </table>
-
-    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
